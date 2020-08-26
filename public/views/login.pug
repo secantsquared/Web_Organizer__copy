@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        title Login Page
+        style
+            include style.css
+        link(href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat&display=swap" rel="stylesheet")
+    .body
+        h1 Login
+        form.login
+            .form-group
+                input#email-input.form-control(type='email' placeholder='Email')
+            .form-group
+                input#password-input.form-control(type='password' placeholder='Password')
+            button.btn.btn-default(type='submit') Login
+        p
+            | Or sign up 
+            a(href='/signup') here
+    .footer 
+        h5 &copy; Clever Foxes
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+script(type='text/javascript' src='/assets/js/login.js')

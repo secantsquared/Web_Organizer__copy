@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        title Signup Page
+        style
+            include style.css
+        link(href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat&display=swap" rel="stylesheet")
+    .body
+        h1 Sign Up
+        form.signup
+            .form-group
+                input#email-input.form-control(type='email' placeholder='Email')
+            .form-group
+                input#password-input.form-control(type='password' placeholder='Password')
+            #alert.alert.alert-danger(style='display: none' role='alert')
+                span.glyphicon.glyphicon-exclamation-sign(aria-hidden='true')
+                span.sr-only Error:
+                span.msg
+            button.btn.btn-default(type='submit') Sign Up
+        p
+            | Or login 
+            a(href='/login') here
+    .footer 
+        h5 &copy; Clever Foxes
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(type='text/javascript' src='/assets/js/signup.js')
